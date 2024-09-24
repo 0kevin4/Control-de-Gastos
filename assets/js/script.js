@@ -35,7 +35,7 @@ function updateExpenseList(){
         
         htmlList += `<li>${element} / ${description} / USD ${expenditureValue.toFixed(2)} 
             <button id="update" onclick="viewExpenses(${position});">Editar</button>
-            <button onclick="deleteExpenses(${position});">Eliminar</button>
+            <button id="delete" onclick="deleteExpenses(${position});">Eliminar</button>
         </li>`;
         
         totalExpenses += Number(expenditureValue);

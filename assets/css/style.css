@@ -3,7 +3,6 @@ body {
 
     background: url('../img/fondo.png'), linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
     background-size: auto;
-    background-repeat: no-repeat;
     /* Hace que la imagen cubra todo el área del elemento */
     background-position: right;
     min-height: 100vh;
@@ -221,3 +220,89 @@ ul li:last-child {
 }
 
 /* Modal */
+
+
+@media only screen and (max-width: 600px) {
+    .main-container {
+        width: 75%;
+    }
+
+    input[type="text"],
+    input[type="number"]{
+        width: 90%;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    input::placeholder{
+        font-size: 1rem;
+    }
+
+    ul{
+        width: 100%;
+    }
+
+    ul li{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+
+    #update, #delete {
+        height: 50%;
+    }
+
+    .total {
+        font-size: 1.5rem;
+    }
+
+    #gastosTotales{
+        font-size: 1.2rem;
+        padding-top: 0.5rem;
+    }
+
+    .modal-content {
+        width: 70%;
+        box-sizing: border-box;
+       
+    }
+
+    .modal-content label {
+        margin: 0;
+    }
+
+    .modal-content input {
+        margin: 0.7rem 0;
+    }
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .main-container {
+        width: 65%;
+    }
+
+    .total {
+        font-size: 1.5rem;
+    }
+
+    #gastosTotales{
+        font-size: 1.4rem;
+    }
+
+    .modal-content {
+        width: 45%;
+        box-sizing: border-box;
+       
+    }
+
+    .modal-content label {
+        margin: 0;
+    }
+
+    .modal-content input {
+        margin: 0.7rem 0;
+    }
+}
