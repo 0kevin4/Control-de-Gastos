@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Gastos Mensuales</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="img-container">
+                <img src="./assets/img/titulo.png" />
+            </div>
+            <div class="form-group">
+                <input type="text" id="nombreGasto" placeholder="Nombre del gasto *">
+                <input type="text" id="descripcionGasto" placeholder="Descripcion">
+                <input type="number" id="valorGasto" placeholder="Valor del gasto *" min="0" step="0.01">
+                <button id="botonFormulario" onclick="clickBoton();">Agregar</button>
+            </div>
+            
+            <div class="total">
+                Total Mensual: US$ <span id="totalGastos">0.00</span>
+            </div>
+            <p id="gastosTotales"></p>
+            <div class="deleteAll">
+                <button id="deleteAll" onclick="deleteAll();">Eliminar todo</button>
+            </div>
+            <ul id="listaDeGastos"></ul>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span onclick="closemodal();" class="close">&times;</span>
+                  <h1>Editar </h1>
+                    <label>Nombre </label><input type="text" id="nombreGasto2">
+                    <label>Descripcion </label><input type="text" id="descripcionGasto2">
+                    <label>Valor </label><input type="number" id="valorGasto2">
+                    <div id="divUpdate">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
