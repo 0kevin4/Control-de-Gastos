@@ -74,6 +74,7 @@ ul li {
     justify-content: space-between;
     border-radius: 10px;
     gap: 10px;
+    font-weight: 600;
 }
 
 ul li:last-child {
